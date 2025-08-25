@@ -24,7 +24,7 @@ export default function Nosotros() {
           {/* Tarjeta misión */}
           <article className={card}>
             <div
-              className="absolute inset-x-0 bottom-0 h-0 bg-emerald-600/90 
+              className="absolute inset-x-0 bottom-0 h-0 bg-green-500
                          transition-[height] duration-700 ease-out
                          motion-safe:group-hover:h-full"
               aria-hidden="true"
@@ -40,7 +40,7 @@ export default function Nosotros() {
           {/* Tarjeta visión */}
           <article className={card}>
             <div
-              className="absolute inset-x-0 bottom-0 h-0 bg-emerald-600/90 
+              className="absolute inset-x-0 bottom-0 h-0 bg-green-500
                          transition-[height] duration-700 ease-out
                          motion-safe:group-hover:h-full"
               aria-hidden="true"
@@ -58,28 +58,32 @@ export default function Nosotros() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Colum Iz*/}
           <div className="lg:col-span-5 relative">
-            <div className="absolute -inset-2 rounded-3xl bg-emerald-500/10 blur-2xl -z-10" />
+            <div className="absolute -inset-2 rounded-3xl bg-emerald-500/100 blur-2xl -z-10" />
 
             <article
               className="relative rounded-3xl p-8 sm:p-10
-                         bg-gradient-to-br from-emerald-500 to-emerald-600
-                         text-white shadow-xl ring-1 ring-white/10"
+                bg-gradient-to-br bg-green-500
+                text-white shadow-xl ring-1 ring-white/5"
             >
-              <h3 className="text-3xl sm:text-4xl font-extrabold mb-4">Filosofía</h3>
-              <p className="text-lg leading-relaxed opacity-95">
+              <h3 className="text-3xl sm:text-4xl font-extrabold mb-4 drop-shadow-[1px_1px_1px_black]">
+                Filosofía
+              </h3>
+              <p className="text-lg leading-relaxed opacity-100 drop-shadow-[1px_1px_1px_black]">
                 “El futuro existe primero en la imaginación, después en la
                 voluntad, luego en la realidad.”
               </p>
-              <p className="mt-6 font-medium opacity-90">— R. A. Wilson</p>
+              <p className="mt-6 font-medium opacity-100 drop-shadow-[1px_1px_1px_black]">
+                — R. A. Wilson
+              </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-white/15">
+                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-[#787878]">
                   Calidad
                 </span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-white/15">
+                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-[#787878]">
                   Innovación
                 </span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-white/15">
+                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-[#787878]">
                   Confianza
                 </span>
               </div>

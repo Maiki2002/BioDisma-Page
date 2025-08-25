@@ -1,6 +1,6 @@
 export default function Inicio() {
   return (
-    <section className="bg-white text-gray-950">
+    <section id="inicio" className="bg-white text-gray-950">
       <div className="max-w-6xl mx-auto px-6 py-30 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
           <h1 className="text-5xl font-bold mb-4">¿Quiénes somos?</h1>

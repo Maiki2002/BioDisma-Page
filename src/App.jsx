@@ -6,6 +6,9 @@ import Certificaciones from "./components/certificaciones.jsx";
 import Productos from "./components/productos.jsx";
 import ProductosPage from "./pages/ProductosPage.jsx";
 import Nosotros from "./components/nosotros.jsx";
+import Clientes from "./components/clientes.jsx";
+import Contacto from "./components/contacto.jsx";
+import Footer from "./components/footer.jsx"
 
 function Home() {
   return (
@@ -44,6 +47,15 @@ function Home() {
         </div>
         <div>
           <Nosotros />
+        </div>
+        <div>
+          <Clientes/>
+        </div>
+        <div>
+          <Contacto/>
+        </div>
+        <div>
+          <Footer/>
         </div>
       </main>
     </div>

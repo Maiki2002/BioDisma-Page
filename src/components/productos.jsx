@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Productos() {
   return (
-    <section className="text-white max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="productos" className="text-white max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       
       {/* Col iz */}
       <div>
