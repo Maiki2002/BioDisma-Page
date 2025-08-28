@@ -36,7 +36,9 @@ function Header() {
         <div className="font-bold flex items-center justify-between py-4">
           {/* Logo / Marca */}
           <a href="#logo" className={`${textBase} text-2xl font-bold`}>
-            Logo
+            <img src="/images/logoBD.png" 
+            alt="Biodisma Logo" 
+            className="mx-auto w-30 sm:w-140 md:w-40 object-contain"/>
           </a>
 
           {/* Botón hamburguesa celular */}

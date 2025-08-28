@@ -23,8 +23,10 @@ function Home() {
 
       <div className="fixed inset-0 z-30 flex items-center justify-center px-4 text-center pointer-events-none">
         <div className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
-          Biodisma logo
-          <span className="block text-base sm:text-xl md:text-2xl font-normal mt-3">
+          <img src="/images/logoBD2.png"
+          alt="Biodisma Logo" 
+          className="mx-auto w-40 sm:w-66 md:w-60 object-contain" />
+          <span className="block text-base sm:text-xl md:text-2xl font-light mt-22 md:px-50">
             Empresa mexicana dedicada a la distribución de productos médicos de
             alta calidad para el cuidado de la salud.
           </span>

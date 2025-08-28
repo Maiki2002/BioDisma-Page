@@ -3,9 +3,12 @@ import { useMemo, useState } from "react";
 const CATEGORIAS = [
   { id: "todos", nombre: "Todos" },
   { id: "ortopedia", nombre: "Ortopedia" },
-  { id: "cardiologia", nombre: "Cardiología" },
+  { id: "cirugia", nombre: "Cirugía" },
+  { id: "biomateriales", nombre: "Biomateriales / Regeneración" },
+  { id: "hemostasia", nombre: "Hemostasia / Anti-adherente" },
+  { id: "sutura", nombre: "Sutura y cierre" },
+  { id: "terapia_heridas", nombre: "Terapia de heridas" },
   { id: "equipo", nombre: "Equipo Médico" },
-  { id: "insumos", nombre: "Insumos" },
 ];
 
 const PRODUCTOS = [
@@ -13,41 +16,129 @@ const PRODUCTOS = [
     id: 1,
     nombre: "Cingal",
     descripcion:
-      "Inyección intraarticular para alivio del dolor en osteoartritis. Alta pureza y seguridad.",
+      "Viscosuplemento que combina ácido hialurónico con esteroide para alivio rápido y de larga duración del dolor por osteoartritis de rodilla (hasta más de 6 meses).",
     categoria: "ortopedia",
-    imagen: "/images/Cingal.png",
+    imagen: "/images/productos/Cingal.png",
   },
   {
     id: 2,
-    nombre: "4DryField",
+    nombre: "4DryField PH",
     descripcion:
-      "Acreditación que respalda la calidad y la seguridad de nuestros productos.",
-    categoria: "insumos",
-    imagen: "/images/",
+      "Polvo hidrofílico para hemostasia que, al gelificarse, actúa como barrera mecánica para la prevención de adherencias en cirugía.",
+    categoria: "hemostasia",
+    imagen: "/images/productos/4dryfield.png",
   },
   {
     id: 3,
-    nombre: "Monitor Multiparámetro",
+    nombre: "HyaloFast",
     descripcion:
-      "Monitoreo continuo de signos vitales con alarmas configurables y alta precisión.",
-    categoria: "equipo",
-    imagen: "/images/otro.png",
+      "Matriz 3D biodegradable de HYAFF (HA) para reparación en una sola etapa de lesiones condrales/osteocondrales.",
+    categoria: "ortopedia",
+    imagen: "/images/productos/hyalofast.png",
   },
   {
     id: 4,
-    nombre: "Stent Coronario",
+    nombre: "Glutack",
     descripcion:
-      "Implante utilizado para mantener abiertas las arterias coronarias. Material biocompatible.",
-    categoria: "cardiologia",
-    imagen: "/images/otro.png",
+      "Dispositivo para fijación atraumática de mallas herniarias por laparoscopía, que aplica adhesivo Glubran 2 de forma precisa y consistente.",
+    categoria: "cirugia",
+    imagen: "/images/productos/glutack.png",
   },
   {
     id: 5,
-    nombre: "Guantes Estériles",
+    nombre: "HYAcorp Endo Gel",
     descripcion:
-      "Guantes para procedimientos, hipoalergénicos y de alta resistencia.",
-    categoria: "insumos",
-    imagen: "/images/otro.png",
+      "Gel viscoelástico de ácido hialurónico, biodegradable, que se adhiere al tejido y pared abdominal formando barrera anti-adherente postquirúrgica.",
+    categoria: "hemostasia",
+    imagen: "/images/productos/hyacorp.png",
+  },
+  {
+    id: 6,
+    nombre: "Punta de ablación monopolar OBS",
+    descripcion:
+      "Electrodo de ablación/coagulación para tejidos blandos; modelos con succión de humo/líquidos y eje extensible para mejor visualización.",
+    categoria: "ortopedia",
+    imagen: "/images/productos/obs.png",
+  },
+  {
+    id: 7,
+    nombre: "Monovisc",
+    descripcion:
+      "Viscosuplemento de ácido hialurónico de alta concentración en dosis única para dolor de rodilla por osteoartritis.",
+    categoria: "ortopedia",
+    imagen: "/images/productos/monovisc.png",
+  },
+  {
+    id: 8,
+    nombre: "Marrow Cellution",
+    descripcion:
+      "Sistema de aspiración de médula ósea que maximiza la recuperación de células progenitoras y minimiza la dilución sanguínea, sin centrifugación.",
+    categoria: "biomateriales",
+    imagen: "/images/productos/marrow.png",
+  },
+  {
+    id: 9,
+    nombre: "Grapadoras EziSurg Medical",
+    descripcion:
+      "Portafolio de grapadoras endoscópicas/lineales para cirugía mínimamente invasiva y gastrointestinal; busca cierre seguro y eficiente.",
+    categoria: "cirugia",
+    imagen: "/images/productos/ezisurg.png",
+  },
+  {
+    id: 10,
+    nombre: "Sutura Quill",
+    descripcion:
+      "Sutura barbada bidireccional que elimina nudos y distribuye la tensión de manera uniforme, acelerando el cierre y mejorando la seguridad.",
+    categoria: "sutura",
+    imagen: "/images/productos/quill.png",
+  },
+  {
+    id: 11,
+    nombre: "M-Close Kit",
+    descripcion:
+      "Sistema de cierre de puertos laparoscópicos con despliegue simultáneo de dos agujas opuestas para lograr simetría de 180° de forma consistente.",
+    categoria: "sutura",
+    imagen: "/images/productos/m-close.png",
+  },
+  {
+    id: 12,
+    nombre: "DynaMesh",
+    descripcion:
+      "Implantes de malla PVDF para refuerzo/reconstrucción de tejidos blandos (hernia, suelo pélvico) con alta estabilidad y bordes suaves.",
+    categoria: "equipo",
+    imagen: "/images/productos/dynamesh.png",
+  },
+  {
+    id: 13,
+    nombre: "Pistola de lavado pulsátil OSRON",
+    descripcion:
+      "Sistema de lavado quirúrgico pulsátil para desbridamiento y limpieza intraoperatoria; opciones con/ sin LED y diferentes puntas.",
+    categoria: "cirugia",
+    imagen: "/images/productos/pistola-lavado.png",
+  },
+  {
+    id: 14,
+    nombre: "Presión negativa LIFOTRONIC",
+    descripcion:
+      "Sistemas de terapia de presión negativa (NPWT) para manejo de heridas agudas y crónicas: remueven exudado, reducen carga bacteriana y favorecen granulación.",
+    categoria: "terapia_heridas",
+    imagen: "/images/productos/lifotronic.png",
+  },
+  {
+    id: 15,
+    nombre: "ExFuse",
+    descripcion:
+      "Putty de matriz ósea desmineralizada (DBM) con hueso canceloso y CMC; osteoconducción/inducción y entrega en jeringa lista para usar.",
+    categoria: "biomateriales",
+    imagen: "/images/productos/exfuse.png",
+  },
+  {
+    id: 16,
+    nombre: "Tendón Tibial FlexiGraft",
+    descripcion:
+      "Aloginjerto tendinoso pre-preparado para reconstrucción ligamentaria (ACL/PCL, etc.), optimiza tiempos en quirófano.",
+    categoria: "biomateriales",
+    imagen: "/images/productos/flexigraft.png",
   },
 ];
 
@@ -80,7 +171,7 @@ export default function ProductosPage() {
 
       {/* Layout principal */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Sidebar izq */}
+        {/* Sidebar */}
         <aside className="lg:col-span-3">
           {/* Buscador */}
           <div className="mb-6">
@@ -100,7 +191,7 @@ export default function ProductosPage() {
             </div>
           </div>
 
-          {/* Categorías desktop */}
+          {/* Categorías */}
           <div className="hidden sm:block sticky top-24">
             <h3 className="text-sm font-semibold text-gray-700 mb-3">Clasificaciones</h3>
             <ul className="space-y-2">
@@ -124,7 +215,7 @@ export default function ProductosPage() {
             </ul>
           </div>
 
-          {/* Categorías celular */}
+          {/* Chips móviles */}
           <div className="sm:hidden -mx-4 px-4">
             <div className="flex gap-2 overflow-x-auto no-scrollbar py-2">
               {CATEGORIAS.map((c) => {
@@ -147,15 +238,13 @@ export default function ProductosPage() {
           </div>
         </aside>
 
-        {/* Contenido der */}
+        {/* Contenido */}
         <main className="lg:col-span-9">
-          {/* Meta de filtros */}
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm text-gray-600">
               Mostrando <span className="font-semibold">{productosFiltrados.length}</span>{" "}
-              producto(s){categoriaActiva !== "todos" ? ` en ${categoriaActiva}` : ""}.
+              producto(s){categoriaActiva !== "todos" ? ` en ${CATEGORIAS.find(c=>c.id===categoriaActiva)?.nombre}` : ""}.
             </p>
-            {/* Orden básico */}
             <select
               className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
               defaultValue="relevancia"
@@ -166,7 +255,6 @@ export default function ProductosPage() {
             </select>
           </div>
 
-          {/* Grid de productos */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {productosFiltrados.map((p) => (
               <article
@@ -183,7 +271,6 @@ export default function ProductosPage() {
                 <h2 className="text-lg font-semibold mb-1">{p.nombre}</h2>
                 <p className="text-sm text-gray-600 mb-4">{p.descripcion}</p>
 
-                {/* Etiqueta de categoría */}
                 <div className="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded-full bg-cyan-50 text-cyan-700 border border-cyan-200">
                   <span className="inline-block h-2 w-2 rounded-full bg-cyan-500" />
                   {CATEGORIAS.find((c) => c.id === p.categoria)?.nombre ?? "General"}
@@ -192,7 +279,6 @@ export default function ProductosPage() {
             ))}
           </div>
 
-          {/* Sin datos */}
           {productosFiltrados.length === 0 && (
             <div className="text-center py-16 text-gray-500">
               No encontramos resultados. Ajusta los filtros o el texto de búsqueda.

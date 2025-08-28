@@ -14,9 +14,9 @@ export default function Inicio() {
         </div>
         <div className="flex justify-center">
           <img
-            src="/ruta-de-tu-imagen.jpg"
+            src="/images/inicio.jpeg"
             alt="Imagen representativa"
-            className="rounded-2xl shadow-lg max-h-[400px] object-cover"
+            className="rounded-2xl shadow-lg max-h-[350px] object-cover"
           />
         </div>
       </div>

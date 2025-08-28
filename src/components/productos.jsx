@@ -17,7 +17,7 @@ export default function Productos() {
       {/* Col der */}
       <div className="flex flex-col items-center">
         <img 
-          src="/images/Cingal.png" 
+          src="/images/productos/Cingal.png" 
           alt="Imagen de productos" 
           className="rounded-2xl max-h-[300px] object-cover mb-6"
         />

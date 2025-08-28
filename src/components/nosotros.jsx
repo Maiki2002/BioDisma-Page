@@ -9,9 +9,9 @@ export default function Nosotros() {
     "relative z-10 text-gray-700 leading-relaxed transition-colors duration-300 group-hover:text-white";
 
   const imgs = [
-    "/images/evento-principal.jpg",
-    "/images/evento-secundaria-1.jpg",
-    "/images/evento-secundaria-2.jpg",
+    "/images/nosotros.jpg",
+    "/images/nosotros1.jpeg",
+    "/images/nosotros2.jpeg",
   ];
 
   return (
