@@ -1,0 +1,120 @@
+{
+  "header": {
+    "menu": {
+      "home": "Inicio",
+      "products": "Productos",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+    "openMenu": "Abrir menú",
+    "languageLabel": "Idioma",
+    "languages": {
+      "es": "🇲🇽 ES",
+      "en": "🇺🇸 EN",
+      "de": "🇩🇪 DE",
+      "zh": "🇨🇳 中文"
+    }
+  },
+  "hero": {
+    "description": "Empresa mexicana dedicada a la distribución de productos médicos de alta calidad para el cuidado de la salud. Nos especializamos en brindar soluciones para hospitales, médicos y profesionales del sector, con enfoque en confianza, atención personalizada y compromiso con la excelencia.",
+    "explore": "Explorar",
+    "goToAbout": "Ir a la sección de quiénes somos"
+  },
+  "inicio": {
+    "title": "¿Quiénes somos?",
+    "description": "Somos una empresa dedicada a la distribución de productos para el cuidado de la salud. Como socios estratégicos de hospitales públicos y privados, ofrecemos soluciones innovadoras y confiables que respaldan la labor de los profesionales de la salud. Garantizamos productos con los más altos estándares de calidad y seguridad, priorizando la satisfacción y confianza de nuestros clientes.",
+    "imageAlt": "Imagen representativa"
+  },
+  "certificaciones": {
+    "title": "Certificaciones y Registros",
+    "subtitle": "Garantía de calidad avalada por los más altos estándares internacionales.",
+    "alts": [
+      "Certificación 1",
+      "Certificación 2",
+      "Certificación 3",
+      "Certificación 4"
+    ]
+  },
+  "productos": {
+    "title": "Productos",
+    "description": "Nuestra selección de productos está pensada para responder a las exigencias de hospitales públicos y privados, así como de médicos y profesionales de la salud que requieren tecnología confiable e innovación clínica. Contamos con soluciones especializadas en laparoscopía, biomateriales y dispositivos para cirugía de alta especialidad, incluyendo productos orientados a procedimientos mínimamente invasivos, fijación atraumática y soporte quirúrgico, diseñados para brindar seguridad, desempeño y respaldo en cada intervención.",
+    "button": "Ver productos",
+    "imageAlt": "Producto {{name}}"
+  },
+  "nosotros": {
+    "title": "Nosotros",
+    "intro": "Somos un equipo comprometido con brindar soluciones confiables para el sector salud, respaldando cada etapa con calidad operativa, cercanía y atención especializada.",
+    "pillars": {
+      "mision": {
+        "title": "Misión",
+        "text": "Proveer soluciones médicas innovadoras y confiables que eleven la calidad de vida de los pacientes y potencien el trabajo de los profesionales de la salud."
+      },
+      "vision": {
+        "title": "Visión",
+        "text": "Ser la compañía líder en distribución de productos médicos de alta calidad en México y LATAM, reconocida por su excelencia, seguridad y servicio al cliente."
+      }
+    },
+    "chat": {
+      "close": "Cerrar mensaje",
+      "aria": "Mensaje {{title}}",
+      "sender": "Bio-Disma®"
+    },
+    "philosophy": {
+      "title": "Filosofía",
+      "quote": "El futuro existe primero en la imaginación, después en la voluntad, luego en la realidad.",
+      "author": "— R. A. Wilson"
+    }
+  },
+  "clientes": {
+    "title": "Nuestros clientes",
+    "description": "En Bio-Disma® nos enorgullece colaborar con hospitales e instituciones de gran prestigio en la Ciudad de México. Cada relación que construimos representa nuestro compromiso con la calidad, el servicio y la atención cercana que exige el sector salud. Ser parte de la operación de importantes grupos hospitalarios nos impulsa a seguir ofreciendo soluciones médicas confiables y especializadas."
+  },
+  "contacto": {
+    "title": "Contáctanos",
+    "subtitle": "Escríbenos, llámanos o visita nuestra oficina.",
+    "mapTitle": "Ubicación de oficina",
+    "route": "Ver ruta",
+    "infoTitle": "Información de contacto",
+    "labels": {
+      "email": "Correo electrónico",
+      "phone": "Teléfono de oficina",
+      "address": "Dirección"
+    },
+    "actions": {
+      "email": "Enviar",
+      "phone": "Llamar",
+      "address": "Mapa"
+    },
+    "schedule": "Horario: Lunes a Viernes, 8:00–20:00 (CDMX).",
+    "mapIframeTitle": "Ubicación de la oficina"
+  },
+  "footer": {
+    "brandDescription": "Empresa mexicana dedicada a la distribución de productos médicos de alta calidad para el cuidado de la salud.",
+    "linksTitle": "Enlaces",
+    "contactTitle": "Contáctanos",
+    "rights": "Todos los derechos reservados."
+  },
+  "productosPage": {
+    "title": "Nuestros Productos",
+    "subtitle": "Explora por categoría o usa el buscador para encontrar el producto de interés.",
+    "searchLabel": "Buscar",
+    "searchPlaceholder": "Nombre o descripción…",
+    "classifications": "Clasificaciones",
+    "showing": "Mostrando {{count}} producto(s){{categoryText}}.",
+    "inCategory": " en {{category}}",
+    "sortRelevance": "Ordenar por: Relevancia",
+    "sortName": "Nombre (A-Z)",
+    "noResults": "No encontramos resultados. Ajusta los filtros o el texto de búsqueda.",
+    "categories": {
+      "todos": "Todos",
+      "ortopedia": "Ortopedia",
+      "cirugia": "Cirugía",
+      "biomateriales": "Biomateriales / Regeneración",
+      "hemostasia": "Hemostasia / Anti-adherente",
+      "sutura": "Sutura y cierre",
+      "terapia_heridas": "Terapia de heridas",
+      "equipo": "Equipo Médico",
+      "general": "General"
+    }
+  }
+}

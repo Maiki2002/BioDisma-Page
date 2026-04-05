@@ -1,0 +1,120 @@
+{
+  "header": {
+    "menu": {
+      "home": "Home",
+      "products": "Products",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "openMenu": "Open menu",
+    "languageLabel": "Language",
+    "languages": {
+      "es": "🇲🇽 ES",
+      "en": "🇺🇸 EN",
+      "de": "🇩🇪 DE",
+      "zh": "🇨🇳 中文"
+    }
+  },
+  "hero": {
+    "description": "Mexican company dedicated to the distribution of high-quality medical products for healthcare. We specialize in providing solutions for hospitals, physicians, and healthcare professionals, focused on trust, personalized service, and commitment to excellence.",
+    "explore": "Explore",
+    "goToAbout": "Go to the about section"
+  },
+  "inicio": {
+    "title": "Who are we?",
+    "description": "We are a company dedicated to the distribution of healthcare products. As strategic partners of public and private hospitals, we provide innovative and reliable solutions that support healthcare professionals. We deliver products with the highest standards of quality and safety, prioritizing customer satisfaction and trust.",
+    "imageAlt": "Representative image"
+  },
+  "certificaciones": {
+    "title": "Certifications and Registrations",
+    "subtitle": "Quality assurance backed by the highest international standards.",
+    "alts": [
+      "Certification 1",
+      "Certification 2",
+      "Certification 3",
+      "Certification 4"
+    ]
+  },
+  "productos": {
+    "title": "Products",
+    "description": "Our product portfolio is designed to meet the demands of public and private hospitals, as well as physicians and healthcare professionals who require reliable technology and clinical innovation. We offer specialized solutions in laparoscopy, biomaterials, and high-specialty surgical devices, including products for minimally invasive procedures, atraumatic fixation, and surgical support, designed to provide safety, performance, and confidence in every intervention.",
+    "button": "View products",
+    "imageAlt": "Product {{name}}"
+  },
+  "nosotros": {
+    "title": "About Us",
+    "intro": "We are a team committed to delivering reliable solutions for the healthcare sector, supporting every stage with operational quality, proximity, and specialized attention.",
+    "pillars": {
+      "mision": {
+        "title": "Mission",
+        "text": "Provide innovative and reliable medical solutions that improve patients' quality of life and empower healthcare professionals."
+      },
+      "vision": {
+        "title": "Vision",
+        "text": "To be the leading company in the distribution of high-quality medical products in Mexico and LATAM, recognized for excellence, safety, and customer service."
+      }
+    },
+    "chat": {
+      "close": "Close message",
+      "aria": "Message {{title}}",
+      "sender": "Bio-Disma®"
+    },
+    "philosophy": {
+      "title": "Philosophy",
+      "quote": "The future exists first in imagination, then in will, then in reality.",
+      "author": "— R. A. Wilson"
+    }
+  },
+  "clientes": {
+    "title": "Our Clients",
+    "description": "At Bio-Disma®, we are proud to collaborate with highly prestigious hospitals and institutions in Mexico City. Every relationship we build reflects our commitment to quality, service, and close support required by the healthcare sector. Being part of key hospital operations drives us to continue delivering reliable and specialized medical solutions."
+  },
+  "contacto": {
+    "title": "Contact Us",
+    "subtitle": "Write to us, call us, or visit our office.",
+    "mapTitle": "Office location",
+    "route": "Get directions",
+    "infoTitle": "Contact information",
+    "labels": {
+      "email": "Email",
+      "phone": "Office phone",
+      "address": "Address"
+    },
+    "actions": {
+      "email": "Send",
+      "phone": "Call",
+      "address": "Map"
+    },
+    "schedule": "Office hours: Monday to Friday, 8:00–20:00 (Mexico City).",
+    "mapIframeTitle": "Office location"
+  },
+  "footer": {
+    "brandDescription": "Mexican company dedicated to the distribution of high-quality medical products for healthcare.",
+    "linksTitle": "Links",
+    "contactTitle": "Contact us",
+    "rights": "All rights reserved."
+  },
+  "productosPage": {
+    "title": "Our Products",
+    "subtitle": "Browse by category or use the search bar to find the product you need.",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Name or description…",
+    "classifications": "Categories",
+    "showing": "Showing {{count}} product(s){{categoryText}}.",
+    "inCategory": " in {{category}}",
+    "sortRelevance": "Sort by: Relevance",
+    "sortName": "Name (A-Z)",
+    "noResults": "No results found. Adjust filters or search text.",
+    "categories": {
+      "todos": "All",
+      "ortopedia": "Orthopedics",
+      "cirugia": "Surgery",
+      "biomateriales": "Biomaterials / Regeneration",
+      "hemostasia": "Hemostasis / Anti-adhesive",
+      "sutura": "Suturing and closure",
+      "terapia_heridas": "Wound therapy",
+      "equipo": "Medical equipment",
+      "general": "General"
+    }
+  }
+}

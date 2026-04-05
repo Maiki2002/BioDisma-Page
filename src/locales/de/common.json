@@ -1,0 +1,120 @@
+{
+  "header": {
+    "menu": {
+      "home": "Startseite",
+      "products": "Produkte",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "openMenu": "Menü öffnen",
+    "languageLabel": "Sprache",
+    "languages": {
+      "es": "🇲🇽 ES",
+      "en": "🇺🇸 EN",
+      "de": "🇩🇪 DE",
+      "zh": "🇨🇳 中文"
+    }
+  },
+  "hero": {
+    "description": "Mexikanisches Unternehmen für den Vertrieb hochwertiger Medizinprodukte für das Gesundheitswesen. Wir bieten Lösungen für Krankenhäuser, Ärztinnen und Ärzte sowie Fachkräfte im Gesundheitsbereich mit Fokus auf Vertrauen, persönliche Betreuung und Exzellenz.",
+    "explore": "Entdecken",
+    "goToAbout": "Zum Über-uns-Bereich gehen"
+  },
+  "inicio": {
+    "title": "Wer sind wir?",
+    "description": "Wir sind ein Unternehmen, das sich dem Vertrieb von Gesundheitsprodukten widmet. Als strategische Partner öffentlicher und privater Krankenhäuser bieten wir innovative und zuverlässige Lösungen zur Unterstützung medizinischer Fachkräfte. Wir liefern Produkte mit höchsten Qualitäts- und Sicherheitsstandards und setzen auf Kundenzufriedenheit und Vertrauen.",
+    "imageAlt": "Repräsentatives Bild"
+  },
+  "certificaciones": {
+    "title": "Zertifizierungen und Registrierungen",
+    "subtitle": "Qualitätsgarantie nach höchsten internationalen Standards.",
+    "alts": [
+      "Zertifizierung 1",
+      "Zertifizierung 2",
+      "Zertifizierung 3",
+      "Zertifizierung 4"
+    ]
+  },
+  "productos": {
+    "title": "Produkte",
+    "description": "Unser Produktportfolio ist darauf ausgelegt, die Anforderungen öffentlicher und privater Krankenhäuser sowie von Ärztinnen, Ärzten und medizinischem Fachpersonal zu erfüllen, die zuverlässige Technologie und klinische Innovation benötigen. Wir bieten spezialisierte Lösungen in Laparoskopie, Biomaterialien und hochspezialisierten chirurgischen Geräten, einschließlich Produkten für minimalinvasive Verfahren, atraumatische Fixierung und chirurgische Unterstützung, die Sicherheit, Leistung und Zuverlässigkeit bei jedem Eingriff bieten.",
+    "button": "Produkte ansehen",
+    "imageAlt": "Produkt {{name}}"
+  },
+  "nosotros": {
+    "title": "Über uns",
+    "intro": "Wir sind ein Team, das sich der Bereitstellung zuverlässiger Lösungen für den Gesundheitssektor verschrieben hat und jede Phase mit operativer Qualität, Nähe und spezialisierter Betreuung unterstützt.",
+    "pillars": {
+      "mision": {
+        "title": "Mission",
+        "text": "Innovative und zuverlässige medizinische Lösungen bereitstellen, die die Lebensqualität der Patientinnen und Patienten verbessern und die Arbeit von Gesundheitsfachkräften stärken."
+      },
+      "vision": {
+        "title": "Vision",
+        "text": "Das führende Unternehmen im Vertrieb hochwertiger Medizinprodukte in Mexiko und LATAM sein, anerkannt für Exzellenz, Sicherheit und Kundenservice."
+      }
+    },
+    "chat": {
+      "close": "Nachricht schließen",
+      "aria": "Nachricht {{title}}",
+      "sender": "Bio-Disma®"
+    },
+    "philosophy": {
+      "title": "Philosophie",
+      "quote": "Die Zukunft entsteht zuerst in der Vorstellung, dann im Willen, dann in der Realität.",
+      "author": "— R. A. Wilson"
+    }
+  },
+  "clientes": {
+    "title": "Unsere Kunden",
+    "description": "Bei Bio-Disma® sind wir stolz auf die Zusammenarbeit mit renommierten Krankenhäusern und Institutionen in Mexiko-Stadt. Jede Partnerschaft steht für unser Engagement für Qualität, Service und die Nähe, die der Gesundheitssektor erfordert. Die Mitarbeit in wichtigen Krankenhausabläufen motiviert uns, weiterhin zuverlässige und spezialisierte medizinische Lösungen anzubieten."
+  },
+  "contacto": {
+    "title": "Kontakt",
+    "subtitle": "Schreiben Sie uns, rufen Sie uns an oder besuchen Sie unser Büro.",
+    "mapTitle": "Bürostandort",
+    "route": "Route anzeigen",
+    "infoTitle": "Kontaktinformationen",
+    "labels": {
+      "email": "E-Mail",
+      "phone": "Bürotelefon",
+      "address": "Adresse"
+    },
+    "actions": {
+      "email": "Senden",
+      "phone": "Anrufen",
+      "address": "Karte"
+    },
+    "schedule": "Bürozeiten: Montag bis Freitag, 8:00–20:00 Uhr (Mexiko-Stadt).",
+    "mapIframeTitle": "Bürostandort"
+  },
+  "footer": {
+    "brandDescription": "Mexikanisches Unternehmen für den Vertrieb hochwertiger Medizinprodukte für das Gesundheitswesen.",
+    "linksTitle": "Links",
+    "contactTitle": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "productosPage": {
+    "title": "Unsere Produkte",
+    "subtitle": "Nach Kategorie filtern oder die Suche verwenden, um das gewünschte Produkt zu finden.",
+    "searchLabel": "Suchen",
+    "searchPlaceholder": "Name oder Beschreibung…",
+    "classifications": "Kategorien",
+    "showing": "{{count}} Produkt(e){{categoryText}} angezeigt.",
+    "inCategory": " in {{category}}",
+    "sortRelevance": "Sortieren nach: Relevanz",
+    "sortName": "Name (A-Z)",
+    "noResults": "Keine Ergebnisse gefunden. Passen Sie Filter oder Suchtext an.",
+    "categories": {
+      "todos": "Alle",
+      "ortopedia": "Orthopädie",
+      "cirugia": "Chirurgie",
+      "biomateriales": "Biomaterialien / Regeneration",
+      "hemostasia": "Hämostase / Anti-Adhäsion",
+      "sutura": "Naht und Verschluss",
+      "terapia_heridas": "Wundtherapie",
+      "equipo": "Medizinische Geräte",
+      "general": "Allgemein"
+    }
+  }
+}

@@ -1,125 +1,153 @@
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+
+const COMPANY_PILLARS = [
+  { id: "mision" },
+  { id: "vision" },
+];
+
+const GALLERY_IMAGES = [
+  { src: "/images/nosotros.jpg", alt: "Equipo en evento" },
+  { src: "/images/nosotros1.jpeg", alt: "Colaboración con hospitales" },
+  { src: "/images/nosotros2.jpeg", alt: "Trabajo especializado en salud" },
+];
+
+const INFO_CARD = "rounded-2xl border border-gray-200/80 bg-white/95 p-6 shadow-lg shadow-black/5 backdrop-blur-sm";
+const CHAT_CARD = "relative w-full rounded-2xl border border-white/40 bg-white/92 p-4 shadow-2xl shadow-black/20 backdrop-blur-sm";
+const HEADER_OFFSET = "4.5rem";
+const SLIDE_MS = 4200;
+
 export default function Nosotros() {
-  const card =
-    "group relative overflow-hidden bg-white border border-gray-200 rounded-2xl p-8 shadow-sm " +
-    "transition-all duration-300 motion-safe:hover:shadow-xl motion-safe:hover:-translate-y-1";
+  const { t } = useTranslation();
+  const [activeImage, setActiveImage] = useState(0);
+  const [activePillarId, setActivePillarId] = useState(null);
+  const activePillar = activePillarId
+    ? {
+        id: activePillarId,
+        title: t(`nosotros.pillars.${activePillarId}.title`),
+        text: t(`nosotros.pillars.${activePillarId}.text`),
+      }
+    : null;
 
-  const title =
-    "relative z-10 text-3xl font-bold mb-3 text-[#2ca6bc] transition-colors duration-300 group-hover:text-white";
-  const text =
-    "relative z-10 text-gray-700 leading-relaxed transition-colors duration-300 group-hover:text-white";
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setActiveImage((prev) => (prev + 1) % GALLERY_IMAGES.length);
+    }, SLIDE_MS);
 
-  const imgs = [
-    "/images/nosotros.jpg",
-    "/images/nosotros1.jpeg",
-    "/images/nosotros2.jpeg",
-  ];
+    return () => window.clearInterval(intervalId);
+  }, []);
 
   return (
-    <section id="nosotros" className="bg-white text-black py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Título general */}
-        <h1 className="text-5xl font-bold text-center mb-12">Nosotros</h1>
+    <section
+      id="nosotros"
+      className="relative min-h-[100dvh] lg:h-[100dvh] overflow-hidden bg-slate-100 text-gray-900 flex items-center"
+    >
+      <div
+        className="pointer-events-none absolute inset-0 lg:hidden bg-cover bg-center transition-[background-image] duration-700"
+        style={{ backgroundImage: `url(${GALLERY_IMAGES[activeImage].src})` }}
+        aria-hidden="true"
+      />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          {/* Tarjeta misión */}
-          <article className={card}>
-            <div
-              className="absolute inset-x-0 bottom-0 h-0 bg-green-500
-                         transition-[height] duration-700 ease-out
-                         motion-safe:group-hover:h-full"
-              aria-hidden="true"
-            />
-            <h2 className={title}>Misión</h2>
-            <p className={text}>
-              Proveer soluciones médicas innovadoras y confiables que eleven la
-              calidad de vida de los pacientes y potencien el trabajo de los
-              profesionales de la salud.
-            </p>
-          </article>
+      <div className="pointer-events-none absolute left-0 top-0 hidden h-[100dvh] w-1/2 overflow-hidden lg:block" aria-hidden="true">
+        {GALLERY_IMAGES.map((image, index) => (
+          <div
+            key={image.src}
+            className={[
+              "absolute inset-0 bg-cover bg-center scale-105 transition-opacity duration-700",
+              index === activeImage ? "opacity-100" : "opacity-0",
+            ].join(" ")}
+            style={{ backgroundImage: `url(${image.src})` }}
+          />
+        ))}
+      </div>
 
-          {/* Tarjeta visión */}
-          <article className={card}>
-            <div
-              className="absolute inset-x-0 bottom-0 h-0 bg-green-500
-                         transition-[height] duration-700 ease-out
-                         motion-safe:group-hover:h-full"
-              aria-hidden="true"
-            />
-            <h2 className={title}>Visión</h2>
-            <p className={text}>
-              Ser la compañía líder en distribución de productos médicos de alta
-              calidad en México y LATAM, reconocida por su excelencia, seguridad
-              y servicio al cliente.
-            </p>
-          </article>
-        </div>
-
-        {/* Filosofía */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          {/* Colum Iz*/}
-          <div className="lg:col-span-5 relative">
-            <div className="absolute -inset-2 rounded-3xl bg-emerald-500/100 blur-2xl -z-10" />
-
-            <article
-              className="relative rounded-3xl p-8 sm:p-10
-                bg-gradient-to-br bg-green-500
-                text-white shadow-xl ring-1 ring-white/5"
-            >
-              <h3 className="text-3xl sm:text-4xl font-extrabold mb-4 drop-shadow-[1px_1px_1px_black]">
-                Filosofía
-              </h3>
-              <p className="text-lg leading-relaxed opacity-100 drop-shadow-[1px_1px_1px_black]">
-                “El futuro existe primero en la imaginación, después en la
-                voluntad, luego en la realidad.”
-              </p>
-              <p className="mt-6 font-medium opacity-100 drop-shadow-[1px_1px_1px_black]">
-                — R. A. Wilson
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-[#787878]">
-                  Calidad
-                </span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-[#787878]">
-                  Innovación
-                </span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-[#787878]">
-                  Confianza
-                </span>
+      {activePillar && (
+        <>
+          <div className="absolute inset-x-4 bottom-6 z-20 lg:hidden">
+            <article className={CHAT_CARD} aria-label={t("nosotros.chat.aria", { title: activePillar.title })}>
+              <button
+                type="button"
+                onClick={() => setActivePillarId(null)}
+                className="absolute right-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-[#66E80F] text-black hover:bg-[#58cc0c]"
+                aria-label={t("nosotros.chat.close")}
+              >
+                x
+              </button>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#66E80F] text-white text-xs font-bold">BD</span>
+                <p className="text-sm font-semibold text-gray-700">{t("nosotros.chat.sender")}</p>
+              </div>
+              <div className="rounded-2xl bg-gray-100 px-4 py-3">
+                <p className="text-sm font-semibold text-[#58cc0c] mb-1">{activePillar.title}</p>
+                <p className="leading-relaxed text-gray-700">{activePillar.text}</p>
               </div>
             </article>
           </div>
 
-          {/* Colum der*/}
-          <div className="lg:col-span-7">
-            <div className="grid grid-cols-3 grid-rows-2 gap-4">
-              <figure className="col-span-3 sm:col-span-2 row-span-2 relative overflow-hidden rounded-3xl">
-                <img
-                  src={imgs[0]}
-                  alt="Equipo en evento"
-                  className="h-[380px] w-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-                <div className="pointer-events-none absolute inset-0 ring-1 ring-black/5 rounded-3xl" />
-              </figure>
+          <div className="absolute left-0 top-0 z-20 hidden h-[100dvh] w-1/2 items-center justify-center px-8 lg:flex">
+            <article className={`${CHAT_CARD} max-w-md`} aria-label={t("nosotros.chat.aria", { title: activePillar.title })}>
+              <button
+                type="button"
+                onClick={() => setActivePillarId(null)}
+                className="absolute right-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-[#ffffff] text-black hover:bg-[#58cc0c]"
+                aria-label={t("nosotros.chat.close")}
+              >
+                x
+              </button>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#000000] text-white text-xs font-bold">BD</span>
+                <p className="text-sm font-semibold text-gray-700">{t("nosotros.chat.sender")}</p>
+              </div>
+              <div className="rounded-2xl bg-gray-100 px-4 py-3">
+                <p className="text-sm font-semibold text-[#58cc0c] mb-1">{activePillar.title}</p>
+                <p className="leading-relaxed text-gray-700">{activePillar.text}</p>
+              </div>
+            </article>
+          </div>
+        </>
+      )}
 
-              <figure className="hidden sm:block col-span-1 row-span-1 relative overflow-hidden rounded-2xl">
-                <img
-                  src={imgs[1]}
-                  alt="Detalle 1"
-                  className="h-[180px] w-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-                <div className="pointer-events-none absolute inset-0 ring-1 ring-black/5 rounded-2xl" />
-              </figure>
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center pt-20 pb-10 lg:py-0"
+          style={{ minHeight: `calc(100dvh - ${HEADER_OFFSET})` }}
+        >
+          <div className="hidden lg:block" aria-hidden="true" />
 
-              <figure className="hidden sm:block col-span-1 row-span-1 relative overflow-hidden rounded-2xl">
-                <img
-                  src={imgs[2]}
-                  alt="Detalle 2"
-                  className="h-[180px] w-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-                <div className="pointer-events-none absolute inset-0 ring-1 ring-black/5 rounded-2xl" />
-              </figure>
-            </div>
+          <div className="w-full lg:max-w-[620px] lg:mx-auto">
+            <header className="mb-6 text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{t("nosotros.title")}</h1>
+              <p className="leading-relaxed text-gray-700">
+                {t("nosotros.intro")}
+              </p>
+            </header>
+
+            <section className="mb-4" aria-label={`${t("nosotros.pillars.mision.title")} / ${t("nosotros.pillars.vision.title")}`}>
+              <div className="flex flex-wrap justify-center gap-3 mb-4">
+                {COMPANY_PILLARS.map((pillar) => (
+                  <button
+                    key={pillar.id}
+                    type="button"
+                    onClick={() => setActivePillarId((prev) => (prev === pillar.id ? null : pillar.id))}
+                    className={[
+                      "rounded-full px-5 py-2 text-sm font-semibold transition-all duration-200 border",
+                      activePillarId === pillar.id
+                        ? "bg-[#66E80F] text-black border-[#66E80F] shadow-md"
+                        : "bg-white/95 text-gray-700 border-gray-300 hover:border-[#66E80F] hover:text-[#66E80F] hover:bg-[#66E80F]/10",
+                    ].join(" ")}
+                    aria-pressed={activePillarId === pillar.id}
+                  >
+                    {t(`nosotros.pillars.${pillar.id}.title`)}
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            <article className={`${INFO_CARD} bg-[#2ca6bc] text-black border-[#2ca6bc]`} aria-label={t("nosotros.philosophy.title")}>
+              <h2 className="text-2xl font-extrabold mb-2">{t("nosotros.philosophy.title")}</h2>
+              <p className="leading-relaxed">“{t("nosotros.philosophy.quote")}”</p>
+              <p className="mt-5 font-semibold">{t("nosotros.philosophy.author")}</p>
+            </article>
           </div>
         </div>
       </div>

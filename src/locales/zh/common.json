@@ -1,0 +1,120 @@
+{
+  "header": {
+    "menu": {
+      "home": "首页",
+      "products": "产品",
+      "about": "关于我们",
+      "contact": "联系我们"
+    },
+    "openMenu": "打开菜单",
+    "languageLabel": "语言",
+    "languages": {
+      "es": "🇲🇽 ES",
+      "en": "🇺🇸 EN",
+      "de": "🇩🇪 DE",
+      "zh": "🇨🇳 中文"
+    }
+  },
+  "hero": {
+    "description": "我们是一家墨西哥公司，专注于高质量医疗产品的分销。我们为医院、医生和医疗专业人员提供解决方案，强调信任、个性化服务和卓越承诺。",
+    "explore": "探索",
+    "goToAbout": "前往关于我们版块"
+  },
+  "inicio": {
+    "title": "我们是谁？",
+    "description": "我们是一家致力于医疗健康产品分销的公司。作为公立和私立医院的战略合作伙伴，我们提供创新且可靠的解决方案，支持医疗专业人员的工作。我们以最高质量与安全标准提供产品，优先关注客户满意度与信任。",
+    "imageAlt": "代表性图片"
+  },
+  "certificaciones": {
+    "title": "认证与注册",
+    "subtitle": "以最高国际标准认证的质量保障。",
+    "alts": [
+      "认证 1",
+      "认证 2",
+      "认证 3",
+      "认证 4"
+    ]
+  },
+  "productos": {
+    "title": "产品",
+    "description": "我们的产品组合旨在满足公立和私立医院，以及需要可靠技术与临床创新的医生和医疗专业人员的需求。我们提供腹腔镜、生物材料和高专科手术器械等专业解决方案，包括微创手术、无创固定和手术支持类产品，为每一次手术提供安全、性能与保障。",
+    "button": "查看产品",
+    "imageAlt": "产品 {{name}}"
+  },
+  "nosotros": {
+    "title": "关于我们",
+    "intro": "我们是一支致力于为医疗行业提供可靠解决方案的团队，在每个阶段都以运营质量、贴近服务与专业支持为核心。",
+    "pillars": {
+      "mision": {
+        "title": "使命",
+        "text": "提供创新且可靠的医疗解决方案，提升患者生活质量，并增强医疗专业人员的工作能力。"
+      },
+      "vision": {
+        "title": "愿景",
+        "text": "成为墨西哥及拉丁美洲高质量医疗产品分销领域的领先企业，以卓越、安全和客户服务而闻名。"
+      }
+    },
+    "chat": {
+      "close": "关闭消息",
+      "aria": "消息 {{title}}",
+      "sender": "Bio-Disma®"
+    },
+    "philosophy": {
+      "title": "理念",
+      "quote": "未来首先存在于想象中，然后在意志中，最终在现实中实现。",
+      "author": "— R. A. Wilson"
+    }
+  },
+  "clientes": {
+    "title": "我们的客户",
+    "description": "在 Bio-Disma®，我们很荣幸与墨西哥城多家知名医院和机构合作。每一段合作关系都体现了我们对质量、服务和医疗行业所需贴近支持的承诺。参与重要医院运营推动我们持续提供可靠且专业的医疗解决方案。"
+  },
+  "contacto": {
+    "title": "联系我们",
+    "subtitle": "欢迎给我们写信、来电或到办公室拜访。",
+    "mapTitle": "办公室位置",
+    "route": "查看路线",
+    "infoTitle": "联系信息",
+    "labels": {
+      "email": "电子邮箱",
+      "phone": "办公电话",
+      "address": "地址"
+    },
+    "actions": {
+      "email": "发送",
+      "phone": "拨打",
+      "address": "地图"
+    },
+    "schedule": "办公时间：周一至周五 8:00–20:00（墨西哥城）。",
+    "mapIframeTitle": "办公室位置"
+  },
+  "footer": {
+    "brandDescription": "墨西哥公司，专注于高质量医疗产品分销。",
+    "linksTitle": "链接",
+    "contactTitle": "联系我们",
+    "rights": "版权所有。"
+  },
+  "productosPage": {
+    "title": "我们的产品",
+    "subtitle": "按类别浏览，或使用搜索框查找您需要的产品。",
+    "searchLabel": "搜索",
+    "searchPlaceholder": "名称或描述…",
+    "classifications": "分类",
+    "showing": "显示 {{count}} 个产品{{categoryText}}。",
+    "inCategory": "（{{category}}）",
+    "sortRelevance": "排序方式：相关性",
+    "sortName": "名称（A-Z）",
+    "noResults": "未找到结果。请调整筛选条件或搜索内容。",
+    "categories": {
+      "todos": "全部",
+      "ortopedia": "骨科",
+      "cirugia": "外科",
+      "biomateriales": "生物材料 / 再生",
+      "hemostasia": "止血 / 防粘连",
+      "sutura": "缝合与闭合",
+      "terapia_heridas": "伤口治疗",
+      "equipo": "医疗设备",
+      "general": "通用"
+    }
+  }
+}

@@ -1,9 +1,10 @@
 @import "tailwindcss";
+@import "./App.css";
 
 html {
   scroll-behavior: smooth;
 }
 
 section {
-  scroll-margin-top: 60px; /* ajusta al alto del header */
+  scroll-margin-top: 0;
 }
